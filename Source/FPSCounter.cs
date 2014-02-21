@@ -45,6 +45,11 @@ namespace FrameRateCounter
 		/// </summary>
 		private GameClock FpsClock { get; set; }
 
+		/// <summary>
+		/// where to draw the fps counter
+		/// </summary>
+		private Point Position { get; set; }
+
 		#endregion //Members
 
 		#region Methods
@@ -53,7 +58,8 @@ namespace FrameRateCounter
 			: base(game)
 		{
 			Content = new ContentManager(game.Services);
-			AverageFPS = new Averager<int>(120, 0);
+			Content.RootDirectory = "Content";
+			AverageFPS = new Averager<int>(10, 0);
 			CurrentFPS = 0;
 			FpsClock = new GameClock();
 		}
@@ -67,7 +73,9 @@ namespace FrameRateCounter
 
 			SpriteBatch = new SpriteBatch(GraphicsDevice);
 			Font = new ShadowTextBuddy();
-			Font.Font = Content.Load<SpriteFont>("FpsFont");
+			Font.LoadContent(Content, "FpsFont");
+
+			Position = new Point(32, GraphicsDevice.Viewport.Height - 32);
 		}
 
 		/// <summary>
@@ -85,16 +93,6 @@ namespace FrameRateCounter
 		/// <param name="gameTime"></param>
 		public override void Update(GameTime gameTime)
 		{
-			FpsClock.Update(gameTime);
-
-			//Get the number of seconds that have elasped since last frame
-			float seconds = FpsClock.TimeDelta;
-			
-			//Convert into frames
-			int frames = (int)(seconds * 60.0f);
-
-			//Store in the averager
-			CurrentFPS = AverageFPS.Update(frames);
 		}
 
 		/// <summary>
@@ -103,12 +101,23 @@ namespace FrameRateCounter
 		/// <param name="gameTime"></param>
 		public override void Draw(GameTime gameTime)
 		{
+			FpsClock.Update(gameTime);
+
+			//Get the number of seconds that have elasped since last frame
+			float seconds = FpsClock.TimeDelta;
+
+			//Convert into frames
+			int frames = (int)(1.0f / seconds);
+
+			//Store in the averager
+			CurrentFPS = AverageFPS.Update(frames);
+
 			//get the text string of the fps
 			string fps = string.Format("fps: {0}", CurrentFPS);
 
 			//draw the fps!
 			SpriteBatch.Begin();
-			Font.Write(fps, new Point(32, 32), Justify.Left, 1.0f, Color.White, SpriteBatch, gameTime.ElapsedGameTime.Seconds);
+			Font.Write(fps, Position, Justify.Left, 1.0f, Color.White, SpriteBatch, gameTime.ElapsedGameTime.Seconds);
 			SpriteBatch.End();
 		}
 
