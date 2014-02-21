@@ -47,19 +47,19 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\externals\AverageBuddy\Windows\AverageBuddy.Windows.csproj">
+    <ProjectReference Include="..\..\AverageBuddy\Windows\AverageBuddy.Windows.csproj">
       <Project>{5c824c4d-746c-4b13-9b71-ceeba37c3b6f}</Project>
       <Name>AverageBuddy.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\externals\FontBuddy\Windows\FontBuddy.Windows.csproj">
+    <ProjectReference Include="..\..\FontBuddy\Windows\FontBuddy.Windows.csproj">
       <Project>{65b5bb5d-0c69-4ddb-8de6-f6b91c41279d}</Project>
       <Name>FontBuddy.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\externals\GameTimer\Windows\GameTimer.Windows.csproj">
+    <ProjectReference Include="..\..\GameTimer\Windows\GameTimer.Windows.csproj">
       <Project>{6b6d4188-5c03-4e16-923b-96fdbc85b91a}</Project>
       <Name>GameTimer.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\externals\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsGL.csproj">
+    <ProjectReference Include="..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsGL.csproj">
       <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
       <Name>MonoGame.Framework.WindowsGL</Name>
     </ProjectReference>
