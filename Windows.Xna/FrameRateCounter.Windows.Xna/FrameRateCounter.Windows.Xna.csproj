@@ -67,6 +67,10 @@
       <Project>{72F572D0-338C-45EB-AB95-45F8EAFF5A7D}</Project>
       <Name>FontBuddy.Windows.XNA</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\externals\GameTimer\Windows.XNA\GameTimer.Windows.XNA.csproj">
+      <Project>{C05AFDF0-1371-48FA-AD30-CF14D46EAF2B}</Project>
+      <Name>GameTimer.Windows.XNA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FrameRateCounter.Content\FrameRateCounter.Content.contentproj">
       <Project>{255C42BA-1E47-4C9D-BDB0-29A5B16134C4}</Project>
       <Name>FrameRateCounter.Content</Name>

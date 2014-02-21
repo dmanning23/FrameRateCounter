@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using AverageBuddy;
 using FontBuddyLib;
+using GameTimer;
 
 namespace FrameRateCounter
 {
@@ -39,6 +40,11 @@ namespace FrameRateCounter
 		/// </summary>
 		private int CurrentFPS { get; set; }
 
+		/// <summary>
+		/// used to compute the fps
+		/// </summary>
+		private GameClock FpsClock { get; set; }
+
 		#endregion //Members
 
 		#region Methods
@@ -49,6 +55,7 @@ namespace FrameRateCounter
 			Content = new ContentManager(game.Services);
 			AverageFPS = new Averager<int>(120, 0);
 			CurrentFPS = 0;
+			FpsClock = new GameClock();
 		}
 
 		/// <summary>
@@ -78,8 +85,10 @@ namespace FrameRateCounter
 		/// <param name="gameTime"></param>
 		public override void Update(GameTime gameTime)
 		{
+			FpsClock.Update(gameTime);
+
 			//Get the number of seconds that have elasped since last frame
-			float seconds = gameTime.ElapsedGameTime.Seconds;
+			float seconds = FpsClock.TimeDelta;
 			
 			//Convert into frames
 			int frames = (int)(seconds * 60.0f);
