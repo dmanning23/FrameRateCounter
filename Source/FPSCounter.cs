@@ -1,10 +1,9 @@
-using System;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using AverageBuddy;
 using FontBuddyLib;
 using GameTimer;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace FrameRateCounter
 {
