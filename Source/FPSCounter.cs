@@ -4,6 +4,7 @@ using GameTimer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace FrameRateCounter
 {
@@ -106,7 +107,7 @@ namespace FrameRateCounter
 			float seconds = FpsClock.TimeDelta;
 
 			//Convert into frames
-			int frames = (int)(1.0f / seconds);
+			int frames = Math.Max(0, (int)(1.0f / seconds));
 
 			//Store in the averager
 			CurrentFPS = AverageFPS.Update(frames);
