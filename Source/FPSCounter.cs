@@ -4,6 +4,7 @@ using GameTimer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using ResolutionBuddy;
 using System;
 
 namespace FrameRateCounter
@@ -45,11 +46,6 @@ namespace FrameRateCounter
 		/// </summary>
 		private GameClock FpsClock { get; set; }
 
-		/// <summary>
-		/// where to draw the fps counter
-		/// </summary>
-		private Point Position { get; set; }
-
 		#endregion //Members
 
 		#region Methods
@@ -74,8 +70,6 @@ namespace FrameRateCounter
 			SpriteBatch = new SpriteBatch(GraphicsDevice);
 			Font = new ShadowTextBuddy();
 			Font.LoadContent(Content, "FpsFont");
-
-			Position = new Point(32, GraphicsDevice.Viewport.Height - 32);
 		}
 
 		/// <summary>
@@ -115,9 +109,12 @@ namespace FrameRateCounter
 			//get the text string of the fps
 			string fps = string.Format("fps: {0}", CurrentFPS);
 
+			//get the location to draw teh fps at
+			Point pos = new Point(Resolution.TitleSafeArea.Left, Resolution.TitleSafeArea.Bottom);
+
 			//draw the fps!
 			SpriteBatch.Begin();
-			Font.Write(fps, Position, Justify.Left, 1.0f, Color.White, SpriteBatch, gameTime.ElapsedGameTime.Seconds);
+			Font.Write(fps, pos, Justify.Left, 1.0f, Color.White, SpriteBatch, gameTime.ElapsedGameTime.Seconds);
 			SpriteBatch.End();
 		}
 

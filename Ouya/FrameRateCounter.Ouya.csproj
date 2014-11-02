@@ -72,5 +72,9 @@
       <Project>{8BEA875D-66D2-4A5F-B137-83D262A3851D}</Project>
       <Name>MonoGame.Framework.Ouya</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\ResolutionBuddy\Ouya\ResolutionBuddy.Ouya.csproj">
+      <Project>{3bfacc81-6b4d-462b-91e2-09349a3619ad}</Project>
+      <Name>ResolutionBuddy.Ouya</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
