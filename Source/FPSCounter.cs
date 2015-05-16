@@ -114,7 +114,7 @@ namespace FrameRateCounter
 
 			//draw the fps!
 			SpriteBatch.Begin();
-			Font.Write(fps, pos, Justify.Left, 1.0f, Color.White, SpriteBatch, gameTime.ElapsedGameTime.Seconds);
+			Font.Write(fps, pos, Justify.Left, 1.0f, Color.White, SpriteBatch, FpsClock);
 			SpriteBatch.End();
 		}
 
