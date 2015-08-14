@@ -12,9 +12,9 @@ namespace FrameRateCounter
 	/// <summary>
 	/// This item is a game component that sits and calculates the average FPS
 	/// </summary>
-	public class FPSCounter : DrawableGameComponent
+	public class FpsCounter : DrawableGameComponent
 	{
-		#region Members
+		#region Properties
 
 		/// <summary>
 		/// The contentmanager we are going to use to load our font
@@ -34,29 +34,29 @@ namespace FrameRateCounter
 		/// <summary>
 		/// Used to calculate the average FPS
 		/// </summary>
-		private Averager<int> AverageFPS { get; set; }
+		private Averager<int> AverageFps { get; set; }
 
 		/// <summary>
 		/// Store the current average frames/second
 		/// </summary>
-		private int CurrentFPS { get; set; }
+		private int CurrentFps { get; set; }
 
 		/// <summary>
 		/// used to compute the fps
 		/// </summary>
 		private GameClock FpsClock { get; set; }
 
-		#endregion //Members
+		#endregion //Properties
 
 		#region Methods
 
-		public FPSCounter(Game game)
+		public FpsCounter(Game game)
 			: base(game)
 		{
 			Content = new ContentManager(game.Services);
 			Content.RootDirectory = "Content";
-			AverageFPS = new Averager<int>(10, 0);
-			CurrentFPS = 0;
+			AverageFps = new Averager<int>(10, 0);
+			CurrentFps = 0;
 			FpsClock = new GameClock();
 		}
 
@@ -98,19 +98,19 @@ namespace FrameRateCounter
 			FpsClock.Update(gameTime);
 
 			//Get the number of seconds that have elasped since last frame
-			float seconds = FpsClock.TimeDelta;
+			var seconds = FpsClock.TimeDelta;
 
 			//Convert into frames
-			int frames = Math.Max(0, (int)(1.0f / seconds));
+			var frames = Math.Max(0, (int)(1.0f / seconds));
 
 			//Store in the averager
-			CurrentFPS = AverageFPS.Update(frames);
+			CurrentFps = AverageFps.Update(frames);
 
 			//get the text string of the fps
-			string fps = string.Format("fps: {0}", CurrentFPS);
+			var fps = string.Format("fps: {0}", CurrentFps);
 
 			//get the location to draw teh fps at
-			Point pos = new Point(Resolution.TitleSafeArea.Left, Resolution.TitleSafeArea.Bottom);
+			var pos = new Point(Resolution.TitleSafeArea.Left, Resolution.TitleSafeArea.Bottom);
 
 			//draw the fps!
 			SpriteBatch.Begin();

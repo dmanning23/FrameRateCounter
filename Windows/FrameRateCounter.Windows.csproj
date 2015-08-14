@@ -76,8 +76,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Source\FPSCounter.cs">
-      <Link>FPSCounter.cs</Link>
+    <Compile Include="..\Source\FpsCounter.cs">
+      <Link>FpsCounter.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
