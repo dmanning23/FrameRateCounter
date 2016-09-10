@@ -1,4 +1,4 @@
 FrameRateCounter
 ================
 
-Display the frame rate in your xna/monogame project.
+MonoGame component to display the frame rate.
