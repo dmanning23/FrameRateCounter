@@ -12,14 +12,9 @@ namespace FrameRateCounter
 	/// <summary>
 	/// This item is a game component that sits and calculates the average FPS
 	/// </summary>
-	public class FpsCounter : DrawableGameComponent
+	public class FpsCounter : DrawableGameComponent, IFPSCounter
 	{
 		#region Properties
-
-		/// <summary>
-		/// The contentmanager we are going to use to load our font
-		/// </summary>
-		private ContentManager Content { get; set; }
 
 		/// <summary>
 		/// The spritebatch we will use to draw the fps
@@ -58,12 +53,13 @@ namespace FrameRateCounter
 		public FpsCounter(Game game, string fontResource)
 			: base(game)
 		{
-			Content = new ContentManager(game.Services);
-			Content.RootDirectory = "Content";
 			AverageFps = new Averager<int>(10, 0);
 			CurrentFps = 0;
 			FpsClock = new GameClock();
-			FontResource = FontResource;
+			FontResource = fontResource;
+
+			Game.Components.Add(this);
+			Game.Services.AddService<IFPSCounter>(this);
 		}
 
 		/// <summary>
@@ -75,24 +71,7 @@ namespace FrameRateCounter
 
 			SpriteBatch = new SpriteBatch(GraphicsDevice);
 			Font = new ShadowTextBuddy();
-			Font.LoadContent(Content, FontResource);
-		}
-
-		/// <summary>
-		/// clean up all our content
-		/// </summary>
-		protected override void UnloadContent()
-		{
-			base.UnloadContent();
-			Content.Unload();
-		}
-
-		/// <summary>
-		/// Called every frame to update the FPS
-		/// </summary>
-		/// <param name="gameTime"></param>
-		public override void Update(GameTime gameTime)
-		{
+			Font.LoadContent(Game.Content, FontResource);
 		}
 
 		/// <summary>
@@ -119,7 +98,7 @@ namespace FrameRateCounter
 			var pos = new Point(Resolution.TitleSafeArea.Left, Resolution.TitleSafeArea.Bottom);
 
 			//draw the fps!
-			SpriteBatch.Begin();
+			SpriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, Resolution.TransformationMatrix());
 			Font.Write(fps, pos, Justify.Left, 1.0f, Color.White, SpriteBatch, FpsClock);
 			SpriteBatch.End();
 		}

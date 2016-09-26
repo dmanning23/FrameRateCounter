@@ -369,7 +369,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -2624,7 +2624,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -5040,7 +5040,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -7496,7 +7496,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -9921,7 +9921,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -12383,7 +12383,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -14808,7 +14808,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -17345,11 +17345,11 @@
         "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb"
       ]
     },
-    "ResolutionBuddy/1.0.2": {
-      "sha512": "xyRgyyxMiCW8n5SwlH2PSa2BxGyD1X28P5fuw9lzMlrsacSuLoHu8hCrJEBT5w9+0YCJp9qSnRZVC9MKRXpATg==",
+    "ResolutionBuddy/1.0.3": {
+      "sha512": "IpeWsjYAGPzdxtcHLy1mwwX8bSxGNQmtDH2a1GDjZ3fmtgeuXO+ECsZNBG1z8IsdqhObCQemocjehJfg/PiCnQ==",
       "type": "package",
       "files": [
-        "ResolutionBuddy.1.0.2.nupkg.sha512",
+        "ResolutionBuddy.1.0.3.nupkg.sha512",
         "ResolutionBuddy.nuspec",
         "lib/MonoAndroid10/ResolutionBuddy.Android.dll",
         "lib/MonoAndroid10/ResolutionBuddy.Android.pdb",
@@ -23146,7 +23146,7 @@
       "GameTimer >= 1.0.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
-      "ResolutionBuddy >= 1.0.2"
+      "ResolutionBuddy >= 1.0.3"
     ],
     "UAP,Version=v10.0": []
   }
