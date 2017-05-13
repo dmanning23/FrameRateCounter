@@ -1,5 +1,4 @@
 {
-  "locked": false,
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
@@ -15,7 +14,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -369,7 +368,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -2322,7 +2321,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -2624,7 +2623,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -4737,7 +4736,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -5040,7 +5039,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -7191,7 +7190,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -7496,7 +7495,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -9615,7 +9614,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -9921,7 +9920,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -12078,7 +12077,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -12383,7 +12382,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -14502,7 +14501,7 @@
           "lib/uap10.0/AverageBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.8": {
+      "FontBuddy/1.0.11": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -14808,7 +14807,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.3": {
+      "ResolutionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -16970,12 +16969,13 @@
         "lib/uap10.0/AverageBuddy.WindowsUniversal.pdb"
       ]
     },
-    "FontBuddy/1.0.8": {
-      "sha512": "HM9ho1Lql/ATe4P97V1/r1VSRNECCRIisVGGfS5+PiCdPkknDG1pwYqnad65gIkXwYx+ucF1Qg7y5HTfNbE6OQ==",
+    "FontBuddy/1.0.11": {
+      "sha512": "DWzHw9X7NhaVEIA7VIElPzOlyl5hfyd0R2TJKvjI1c1QbS/TOFZDvwDKOs0qkesyDU3Aew8cmAzebeGLidW37Q==",
       "type": "package",
+      "path": "fontbuddy/1.0.11",
       "files": [
-        "FontBuddy.1.0.8.nupkg.sha512",
-        "FontBuddy.nuspec",
+        "fontbuddy.1.0.11.nupkg.sha512",
+        "fontbuddy.nuspec",
         "lib/MonoAndroid10/FontBuddyLib.Android.dll",
         "lib/MonoAndroid10/FontBuddyLib.Android.pdb",
         "lib/Xamarin.iOS10/FontBuddyLib.iOS.dll",
@@ -16987,11 +16987,12 @@
       ]
     },
     "GameTimer/1.0.1": {
-      "sha512": "6IhhpOqoe+JGY79fw0O8igx1RwAj3fZgCtpcwfaPMZdTkekUhPFkVZH3PKSyJuNGS5wNzqqr9ZrB/n52NfspQw==",
+      "sha512": "WrYJ7brNlAneO3L2eCd4ExsBNhcmEb2+NwLlTbhY1Eh8ivb0P2QiX1xnzzy4Ww24kXzYV+/EGla6g1ZMy9X2LA==",
       "type": "package",
+      "path": "gametimer/1.0.1",
       "files": [
-        "GameTimer.1.0.1.nupkg.sha512",
-        "GameTimer.nuspec",
+        "gametimer.1.0.1.nupkg.sha512",
+        "gametimer.nuspec",
         "lib/MonoAndroid10/GameTimer.Android.dll",
         "lib/MonoAndroid10/GameTimer.Android.pdb",
         "lib/Xamarin.iOS10/GameTimer.iOS.dll",
@@ -17345,12 +17346,11 @@
         "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb"
       ]
     },
-    "ResolutionBuddy/1.0.3": {
-      "sha512": "IpeWsjYAGPzdxtcHLy1mwwX8bSxGNQmtDH2a1GDjZ3fmtgeuXO+ECsZNBG1z8IsdqhObCQemocjehJfg/PiCnQ==",
+    "ResolutionBuddy/1.0.4": {
+      "sha512": "Qi0ZhBxEW4DjiH0KVGq/Djf8Zg1cyYE4Ci6Xie50WBwzdooxmRoBIOc4aBp6QiTzew/r0qINBup6QAaNrUsZZQ==",
       "type": "package",
+      "path": "resolutionbuddy/1.0.4",
       "files": [
-        "ResolutionBuddy.1.0.3.nupkg.sha512",
-        "ResolutionBuddy.nuspec",
         "lib/MonoAndroid10/ResolutionBuddy.Android.dll",
         "lib/MonoAndroid10/ResolutionBuddy.Android.pdb",
         "lib/Xamarin.iOS10/ResolutionBuddy.iOS.dll",
@@ -17358,7 +17358,9 @@
         "lib/net451/ResolutionBuddy.DesktopGL.dll",
         "lib/net451/ResolutionBuddy.DesktopGL.pdb",
         "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll",
-        "lib/uap10.0/ResolutionBuddy.WindowsUniversal.pdb"
+        "lib/uap10.0/ResolutionBuddy.WindowsUniversal.pdb",
+        "resolutionbuddy.1.0.4.nupkg.sha512",
+        "resolutionbuddy.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -23142,12 +23144,17 @@
   "projectFileDependencyGroups": {
     "": [
       "AverageBuddy >= 1.0.0",
-      "FontBuddy >= 1.0.8",
+      "FontBuddy >= 1.0.11",
       "GameTimer >= 1.0.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
-      "ResolutionBuddy >= 1.0.3"
+      "ResolutionBuddy >= 1.0.4"
     ],
     "UAP,Version=v10.0": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {},
+  "packageFolders": {
+    "C:\\Users\\Dan\\.nuget\\packages\\": {}
   }
 }

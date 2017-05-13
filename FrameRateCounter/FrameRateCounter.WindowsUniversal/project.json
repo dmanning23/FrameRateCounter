@@ -1,11 +1,11 @@
 ﻿{
   "dependencies": {
     "AverageBuddy": "1.0.0",
-    "FontBuddy": "1.0.8",
+    "FontBuddy": "1.0.11",
     "GameTimer": "1.0.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "MonoGame.Framework.WindowsUniversal": "3.5.1.1679",
-    "ResolutionBuddy": "1.0.3"
+    "ResolutionBuddy": "1.0.4"
   },
   "frameworks": {
     "uap10.0": {}
