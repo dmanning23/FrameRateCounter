@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>FrameRateCounter</id>
-		<version>1.0.8</version>
+		<version>1.0.9</version>
 		<title>FrameRateCounter</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -53,7 +53,7 @@
 			</group>
 
 			<group targetFramework="net451">
-				<dependency id="MonoGame.Framework.DesktopGL" version="3.5"/>
+				<dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
 				<dependency id="AverageBuddy" version="1.0"/>
 				<dependency id="FontBuddy" version="1.0.8"/>
 				<dependency id="GameTimer" version="1.0"/>
@@ -79,9 +79,9 @@
 		<file src="FrameRateCounter.WindowsUniversal\bin\Release\FrameRateCounter.WindowsUniversal.pdb" target="lib\uap10.0\FrameRateCounter.WindowsUniversal.pdb" />
 		<file src="FrameRateCounter.WindowsUniversal\bin\Release\FrameRateCounter.WindowsUniversal.dll" target="lib\uap10.0\FrameRateCounter.WindowsUniversal.dll" />
 
-		<!--DesktopGL-->
-		<file src="FrameRateCounter.DesktopGL\bin\Release\FrameRateCounter.DesktopGL.pdb" target="lib\net451\FrameRateCounter.DesktopGL.pdb" />
-		<file src="FrameRateCounter.DesktopGL\bin\Release\FrameRateCounter.DesktopGL.dll" target="lib\net451\FrameRateCounter.DesktopGL.dll" />
+		<!--WindowsDX-->
+		<file src="FrameRateCounter.WindowsDX\bin\Release\FrameRateCounter.WindowsDX.pdb" target="lib\net451\FrameRateCounter.WindowsDX.pdb" />
+		<file src="FrameRateCounter.WindowsDX\bin\Release\FrameRateCounter.WindowsDX.dll" target="lib\net451\FrameRateCounter.WindowsDX.dll" />
 
 	</files>
 </package>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameRateCounter.Android", "FrameRateCounter.Android\FrameRateCounter.Android.csproj", "{1D2B288E-65B4-4FB1-8A23-3E9DC9935EAE}"
 EndProject
@@ -11,21 +11,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameRateCounter.WindowsUni
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameRateCounter.SharedProject", "FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.shproj", "{6BBDF346-94EC-4250-B2F5-1B22060AA44C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameRateCounter.DesktopGL", "FrameRateCounter.DesktopGL\FrameRateCounter.DesktopGL.csproj", "{13559151-A060-4D92-A264-A4365C245422}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A63EE85D-C9DE-48B4-B6C9-50D2FAC1BA52}"
 	ProjectSection(SolutionItems) = preProject
 		buildNugetPackages.ps1 = buildNugetPackages.ps1
 		FrameRateCounter.nuspec = FrameRateCounter.nuspec
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameRateCounter.WindowsDX", "FrameRateCounter.WindowsDX\FrameRateCounter.WindowsDX.csproj", "{7528193B-38F2-4882-B70E-1FBD025A871B}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{6bbdf346-94ec-4250-b2f5-1b22060aa44c}*SharedItemsImports = 13
-		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{13559151-a060-4d92-a264-a4365c245422}*SharedItemsImports = 4
-		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{dc727dad-b412-4b49-820d-597ad3b6c9ae}*SharedItemsImports = 4
 		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{1d2b288e-65b4-4fb1-8a23-3e9dc9935eae}*SharedItemsImports = 4
+		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{6bbdf346-94ec-4250-b2f5-1b22060aa44c}*SharedItemsImports = 13
+		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{7528193b-38f2-4882-b70e-1fbd025a871b}*SharedItemsImports = 4
 		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{bfaff396-0946-49cf-a799-e9215b302f0c}*SharedItemsImports = 4
+		FrameRateCounter.SharedProject\FrameRateCounter.SharedProject.projitems*{dc727dad-b412-4b49-820d-597ad3b6c9ae}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,24 +86,27 @@ Global
 		{BFAFF396-0946-49CF-A799-E9215B302F0C}.Release|x64.Build.0 = Release|x64
 		{BFAFF396-0946-49CF-A799-E9215B302F0C}.Release|x86.ActiveCfg = Release|x86
 		{BFAFF396-0946-49CF-A799-E9215B302F0C}.Release|x86.Build.0 = Release|x86
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|ARM.Build.0 = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|x64.Build.0 = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Debug|x86.Build.0 = Debug|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|ARM.ActiveCfg = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|ARM.Build.0 = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|x64.ActiveCfg = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|x64.Build.0 = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|x86.ActiveCfg = Release|Any CPU
-		{13559151-A060-4D92-A264-A4365C245422}.Release|x86.Build.0 = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|x64.Build.0 = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Debug|x86.Build.0 = Debug|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|ARM.Build.0 = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|x64.ActiveCfg = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|x64.Build.0 = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|x86.ActiveCfg = Release|Any CPU
+		{7528193B-38F2-4882-B70E-1FBD025A871B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FEFDA7A-3A05-41AB-AC9E-85E0411FBB10}
 	EndGlobalSection
 EndGlobal
