@@ -40,7 +40,7 @@
       <HintPath>..\packages\AverageBuddy.2.0.0\lib\MonoAndroid10\AverageBuddy.Android.dll</HintPath>
     </Reference>
     <Reference Include="FontBuddyLib.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontBuddy.2.0.4\lib\MonoAndroid10\FontBuddyLib.Android.dll</HintPath>
+      <HintPath>..\packages\FontBuddy.2.0.15\lib\MonoAndroid10\FontBuddyLib.Android.dll</HintPath>
     </Reference>
     <Reference Include="GameTimer.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GameTimer.2.0.0\lib\MonoAndroid10\GameTimer.Android.dll</HintPath>
@@ -59,12 +59,15 @@
     <Reference Include="ResolutionBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ResolutionBuddy.2.0.1\lib\MonoAndroid10\ResolutionBuddy.Android.dll</HintPath>
     </Reference>
+    <Reference Include="SpriteFontPlus, Version=0.7.0.22, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpriteFontPlus.MonoGame.0.7.0.22\lib\netstandard2.0\SpriteFontPlus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Vector2Extensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vector2Extensions.2.0.1\lib\MonoAndroid10\Vector2Extensions.Android.dll</HintPath>
+      <HintPath>..\packages\Vector2Extensions.2.0.2\lib\MonoAndroid10\Vector2Extensions.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -95,7 +95,7 @@ namespace FrameRateCounter
 			var fps = string.Format("fps: {0}", CurrentFps);
 
 			//get the location to draw teh fps at
-			var pos = new Point(Resolution.TitleSafeArea.Left, Resolution.TitleSafeArea.Bottom);
+			var pos = new Vector2(Resolution.TitleSafeArea.Left, Resolution.TitleSafeArea.Bottom);
 
 			//draw the fps!
 			SpriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, Resolution.TransformationMatrix());
